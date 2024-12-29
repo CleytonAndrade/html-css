@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links externos</h1>
+    <p>Você pode acessar meu repositório no GitHub <ins><a href="https://github.com/CleytonAndrade?tab=repositories" target="_blank" rel="external">clicando aqui</a></ins></p> <!--target="_blank" para abrir o link em outra aba e rel="external" para dizer ao navegador que se trata de um site externo--> 
+    <h1>Links internos</h1>
+    <p>Para acessar uma página interna na mesma pasta dentro do servidor, você só precisa do nome do arquivo no <a href="pag002.html">link</a> do parâmetro "a".</p>
+    <p>Para acessar uma página interna, porém em outra pasta no mesmo servidor, você deve referenciar o caminho completo ao arquivo dessa página no <a href="pag003/pag003.html" rel="next"> <!--rel="next" Para dizer ao mecanismo de busca que esse link se trata de uma próxima página dentro do servidor --> link</a> do parâmetro "a". </p>
+    <h1>downloads</h1>
+    <p>Para fazer download de um arquivo pode se associar o caminho do arquivo ao link:</p>
+    <ul>
+        <li><a href="download/01 - História da Internet.pdf" download="01 - História da Internet" type="application/pdf">História da Internet</a> PDF</li> <!--Para navegadores como google chrome baixar arquivos que ele executa internamente, como pdf, e necessário atribuirmos parâmetros para download, que diz o nome do arquivo baixado-->
+        <li><a href="download/01 - História da Internet.rar"  type="application/pdf">História da Internet</a> RAR</li> <!--O parâmetro type define o tipo de mídia que os mecanismos de buscas se utilizam para mostrarem nos resultados de pesquisas, o .pdf .zip .rar .mp3 ...-->
+        <li><a href="download/02 - Como funciona a Internet.pdf"  type="application/pdf">Como funciona a Internet</a> PDF</li>
+        <li><a href="download/02 - Como funciona a Internet.rar"  type="application/pdf">Como funciona a Internet</a> RAR</li>
+        <li><a href="download/03 - Como funciona HTML e CSS.pdf"  type="application/pdf">Como funciona HTML e CSS</a> PDF</li>
+        <li><a href="download/03 - Como funciona HTML e CSS.rar"  type="application/pdf">Como funciona HTML e CSS</a> RAR</li>
+    </ul>
+</body>
+</html>

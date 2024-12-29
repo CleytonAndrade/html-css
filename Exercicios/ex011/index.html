@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mídias em HTML5</title>
+    </head>
+    <body>
+
+        <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos com tamanho de tela diferentes, ou mude a escala do navegador...</p>
+        <picture> <!--Tag acompanhada da tag <source media type> para carregar imagens de tamanho diferentes-->
+            <source media="(min-width:1970px )" srcset="imagens/foto-e.png" type="image/png"/>
+            <source media="(min-width:1416px )" srcset="imagens/foto-l.png" type="image/png"/>
+            <source media="(min-width:1050px)" srcset="imagens/foto-g.png" type="image/png"/> <!--A tela deve ter no mínimo 1050px para carrega a imagem grande.-->
+            <source media="(min-width:750px)" srcset="imagens/foto-m.png" type="image/png"/> <!--A tela deve ter no mínimo 750px para carrega a imagem média.-->
+            <img src="imagens/foto-p.png" alt="imagem dinâmica" /> <!--Comecei da pequena, pois ao carregar as imagens,seus tamanhos em pixels no parâmetro min-width ficam de acordo com a resolução da imagem carregada -->
+        </picture> <!--É de estrema importância deixar 50px a mais no min-width para barra de rolagem-->
+
+        <h1>Reproduzindo audio</h1>
+        <p>Para reproduzir apenas um tipo de audio usa-se apenas a tag <code>"audio"</code> .</p>
+        <audio preload="none" src="midia/happy-mistake.mp3" controls autoplay loop></audio> <!--Controls adiciona o player de mídia, autoplay define se a mídia vai ser carregada assim que a pagina ser aberta e loop repete assim que chega ao fim-->
+
+        <p> Para reproduzir diferentes tipos de arquivos de audio usa-se a tag <code>"source:src"</code> entre as linhas <code>"audio"</code> e <code>"/audio"</code>. </p>
+        <audio preload="metadata" controls autoplay> <!--Parâmetro "preload=" define o que é previamente carregado ao abrir pagina, podendo ser o arquivo completo em "auto", apenas as informações em "metadata" e nada em "none". -->
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg" />  <!--Tag source:src dentro das linhas da tag audio onde "src=" marca o arquivo e "type=" o tipo-->
+            <source src="midia/guanacast-33.ogg" type="audio/ogg" />
+            <source src="midia/guanacast-33.wav" type="audio/wav" />
+            <p> Infelizmente seu navegador não pode reproduzir audio, <a href="midia/guanacast-33.mp3"> clique aqui para baixar</a> </p>
+        </audio>
+
+    </body>
+</html>

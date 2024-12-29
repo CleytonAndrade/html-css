@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(105, 105, 105);
+            padding:  3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;            
+        }
+
+        article {
+            background-color: white;
+            padding: 5px;
+
+        }
+
+        article > aside {
+            font-size: 12px;
+            text-align: center;
+            background-color: rgb(156, 156, 156);
+        }
+        
+        article > p{  
+            text-indent: 20px;
+        }
+
+        article > h2{
+            text-align: center;
+        }
+        main {
+            background-color: lightgrey;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.414);
+        }
+        
+        footer > p {
+            text-align: center;  
+            margin: 0px;
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+            padding: 6px;
+            margin: 0px;         
+        }
+
+        section#noticias {
+            margin: left;
+            width: 600px;
+            box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.438);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>      
+        </section>  
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse, at modi assumenda possimus voluptatum animi fugiat consequatur laudantium sunt quibusdam! Molestias nihil ab ipsam facere nisi consequuntur inventore officiis. Dolores eligendi, earum rerum tempore voluptatibus voluptatem praesentium quibusdam error iste doloribus ex corrupti, hic unde odio possimus deserunt in! Asperiores nulla pariatur aut iste consequuntur corrupti laudantium eligendi. Possimus, eaque! Exercitationem sit officia earum eius consequuntur repudiandae, aliquam dolorum nobis asperiores quia ut deleniti saepe, mollitia veniam libero pariatur rerum sunt iusto sed autem praesentium dolorem similique hic quis! Quo vitae molestias quas illum ipsam. Corporis quo explicabo quisquam, culpa corrupti enim obcaecati dignissimos assumenda voluptas iure incidunt laudantium accusantium voluptatem quaerat suscipit minus ut possimus repudiandae. Nesciunt dignissimos dolorem iure? Dolore corporis perspiciatis, ad reiciendis nihil praesentium aliquam possimus atque, saepe neque recusandae ratione officiis excepturi aliquid cupiditate quo eum. Quas modi obcaecati qui itaque, mollitia labore debitis accusamus quidem beatae omnis in dolorum, voluptatum cupiditate quia. Nulla minima hic saepe porro eos. Quas voluptatem sit odit velit culpa voluptatum debitis ipsum molestias exercitationem numquam? Iste, minima deserunt itaque fuga nihil quae eum repellendus odio nesciunt, velit porro sequi ab consequuntur totam, voluptas et neque. Eum, distinctio corrupti.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+            </article>
+        </section>
+    </main> 
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p> 
+    </footer>
+</body>
+</html>
