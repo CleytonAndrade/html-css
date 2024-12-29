@@ -1,2 +1,2 @@
 # HTML e CSS
-Repositorio com todos os exercicios do curso de HTML e CSS do CursoemVideo.
+Repositório com todos os exercícios do curso de HTML e CSS do CursoemVideo.
