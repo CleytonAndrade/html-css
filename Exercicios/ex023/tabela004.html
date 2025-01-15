@@ -17,13 +17,20 @@
         border: 1px solid black;
         padding: 5px;
        }
-       
-    
-
+       .coluna1 {
+        background-color: aqua;
+       }
+       .coluna2 {
+        background-color: antiquewhite;
+       }
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="coluna1"> 
+            <col class="coluna2" span="2">
+        </colgroup>
        <thead>
            <tr>
             <th scope="col">Grupo</th>
@@ -32,8 +39,7 @@
            </tr>
        </thead>
 
-       <tbody>
-           
+       <tbody>          
            <tr>    
             <th scope="rowgroup" rowspan="3" >Mulheres</th>                    
             <td>Ana Maria Santos</td>
