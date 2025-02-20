@@ -11,6 +11,14 @@
             flex-flow: row wrap;
             justify-content: center;
         }
+        div.conteiner2 {            
+            background-color: aqua;
+            display: flex;
+            height: 300px; /* Para align itens o contêiner pai precisa de altura*/
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
         div.item {
             background-color: blanchedalmond;           
@@ -20,14 +28,35 @@
     </style>
 </head>
 <body>
-    <div class="conteiner">
-        <div class="item">Caixa Filho |A| </div>
-        <div class="item">Caixa Filho |B| </div>
-        <div class="item">Caixa Filho |C| </div>
-        <div class="item">Caixa Filho |D| </div>
-        <div class="item">Caixa Filho |E| </div>
-        <div class="item">Caixa Filho |F| </div>
-        <div class="item">Caixa Filho |G| </div>        
-    </div>
+    <header>
+        <h1>Justify-content e align-items</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Justify-content</h2>
+            <div class="conteiner">
+                <div class="item">Caixa Filho |A| </div>
+                <div class="item">Caixa Filho |B| </div>
+                <div class="item">Caixa Filho |C| </div>
+                <div class="item">Caixa Filho |D| </div>
+                <div class="item">Caixa Filho |E| </div>
+                <div class="item">Caixa Filho |F| </div>
+                <div class="item">Caixa Filho |G| </div>
+            </div>
+        </article>
+
+        <article>
+            <h2>Align-items</h2>
+            <div class="conteiner2">
+                <div class="item">Caixa Filho |A| </div>
+                <div class="item">Caixa Filho |B| </div>
+                <div class="item">Caixa Filho |C| </div>
+                <div class="item">Caixa Filho |D| </div>
+                <div class="item">Caixa Filho |E| </div>
+                <div class="item">Caixa Filho |F| </div>
+                <div class="item">Caixa Filho |G| </div>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
