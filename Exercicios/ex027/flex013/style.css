@@ -54,7 +54,7 @@ main {
 }
 
 
-@media screen and (min-width:640px)  {
+@media screen and (min-width:768px)  {
     header {
         display: flex;
         flex-flow: row wrap;
@@ -69,7 +69,7 @@ main {
     }
 
     main {
-        width: 620px;
+        width: 748px;
         margin: auto;
     }
 }
